@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 @st.cache_data
 def load_data():
     # Replace with your file path
-    file_path = "C:/Users/user/Documents/streamlit_project/ripost_lda_results_term.xlsx"
+    file_path = "file_path = "ripost_lda_results_term.xlsx"
     
     # Load the Excel file
     terms_df = pd.read_excel(file_path, header=None)
