@@ -29,6 +29,9 @@ terms_split, topic_names = load_data()
 st.sidebar.title("Options")
 topic_name = st.sidebar.selectbox("Select Topic", topic_names)  # Let user select a topic name
 
+# Add a custom title with the corpus name
+st.title(f"Word Cloud for {ripost.hu}")
+
 # Word Cloud Visualization
 st.header(f"Word Cloud for {topic_name}")
 topic_terms = terms_split[topic_name].dropna().astype(str)  # Extract terms for the selected topic
